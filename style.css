@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, orange, white, white, green);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  width: 90%;
+  height: 95%;
+  background: conic-gradient(green, orange, white, green, orange, white, green);
+  border: 0.1px solid;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: border-change 0.3s ease infinite alternate
+}
+
+@keyframes border-change {
+  to{
+    background: conic-gradient( orange, white, green, orange, white, green, orange);
+  }
+}
+
+.box {
+  padding-top: 10px;
+  justify-content: space-between;
+  background: white;
+  width: 97%;
+  height: 98.5%;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: cursive;
+  background: linear-gradient(135deg, orange, green, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+}
+
+.BTN {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.BTN button {
+  width: 80px;
+  height: 30px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, orange, white,  orange, white, orange);
+  border: none;
+  margin: 10px;
+  border: 1px solid green;
+  font-weight: bolder;
+  box-shadow: 4px 4px 8px 2px rgba(0, 0, 0, 0.5);
+}
+
+button:active {
+  box-shadow: none;
+  transform: translateY(3px);
+  background: green;
+  border:  1px solid red;
+  
+}
+
+.flag-box {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.stayer-pole{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+}
+
+.pole {
+  width: 10px;
+  height: 80%;
+  background: whitesmoke;
+  border: 0.1px solid;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  box-shadow: inset 2px 2px 4px 1px rgba(0, 0, 0, 0.5);
+}
+
+.stayer {
+  height: 20px;
+  background: gray;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.5);
+}
+
+.one {
+  width: 30px;
+}
+
+.two {
+  width: 60px;
+}
+
+.three {
+  width: 90px
+}
+
+.poster{
+  width: 40%;
+  height: 100%;
+}
+
+.flag{
+  width: 150px;
+  height: 100px;
+  background: linear-gradient(180deg, orange 33.33%, white 33.33%, white 66.34%, green 66.34%, green 100%);
+  transform: translate(-84px, 250px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.1px solid;
+  box-shadow: 4px 4px 8px 2px rgba(0, 0, 0, 0.5);
+}
+
+.animate {
+  animation: flag-up linear 10s forwards;
+}
+
+@keyframes flag-up {
+  to{
+    transform: translate(-84px, 40px);
+  }
+}
+
+.flag img{
+  height: 33.34%;
+}
+
+
