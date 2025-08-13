@@ -149,7 +149,7 @@ button:active {
 
 @keyframes flag-up {
   to{
-    transform: translate(-84px, 40px);
+    transform: translate(-84px, 30px);
   }
 }
 
